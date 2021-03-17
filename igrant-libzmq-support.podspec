@@ -25,13 +25,22 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rebinkpmna@gmail.com' => 'rebin@bluecast.ae' }
-  s.source           = { :git => 'https://github.com/rebinkpmna@gmail.com/igrant-libzmq-support.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zeromq/libzmq', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'igrant-libzmq-support/Classes/**/*'
-  
+  s.source_files =  [
+     "src/*.{h,hpp,c,cc,cpp}",
+     "include/*.h",
+     "cmake_build/*.hpp"
+   ]
+   s.public_header_files = [
+     "include/*.h"
+   ]
+   s.libraries = ["stdc++"]
+   s.requires_arc = false
+   s.prepare_command = "mkdir cmake_build && cd cmake_build && cmake .. | tee \"/tmp/$(basename $0).$$.tmp\"\n"
   # s.resource_bundles = {
   #   'igrant-libzmq-support' => ['igrant-libzmq-support/Assets/*.png']
   # }
