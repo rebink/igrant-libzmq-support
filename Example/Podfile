@@ -1,0 +1,6 @@
+use_frameworks!
+target 'igrant-libzmq-support_Tests' do
+  pod 'igrant-libzmq-support', :path => '../'
+  
+  
+end
