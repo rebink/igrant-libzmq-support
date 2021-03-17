@@ -28,19 +28,8 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/rebink/igrant-libzmq-support.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files =  [
-     "src/*.{h,hpp,c,cc,cpp}",
-     "include/*.h",
-     "cmake_build/*.hpp"
-   ]
-   s.public_header_files = [
-     "include/*.h"
-   ]
-   s.libraries = ["stdc++"]
-   s.requires_arc = false
-   s.prepare_command = "mkdir cmake_build && cd cmake_build && cmake .. | tee \"/tmp/$(basename $0).$$.tmp\"\n"
   # s.resource_bundles = {
   #   'igrant-libzmq-support' => ['igrant-libzmq-support/Assets/*.png']
   # }
