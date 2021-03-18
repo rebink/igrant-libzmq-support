@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
   #   'igrant-libzmq-support' => ['igrant-libzmq-support/Assets/*.png']
   # }
 
-  s.dependency 'libzmq'
+#  s.dependency 'libzmq'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
