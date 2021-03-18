@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'libzmq'
-  s.version          = '4.2.3'
+  s.name             = 'igrant-libzmq-support'
+  s.version          = '0.1.0'
   s.summary          = 'A short description of igrant-libzmq-support.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rebinkpmna@gmail.com' => 'rebin@bluecast.ae' }
-  s.source           = { :https => 'https://github.com/rebink/igrant-libzmq-support', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/rebink/igrant-libzmq-support', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
   #   'igrant-libzmq-support' => ['igrant-libzmq-support/Assets/*.png']
   # }
 
-#  s.dependency 'libzmq'
+  s.dependency 'libzmq'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
